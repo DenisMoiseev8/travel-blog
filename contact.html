@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Контакты - Блог Заядлого Путешественника">
+    <meta name="author" content="Махмудолиев Имран Махмудович, группа Бд713">
+    <title>Контакты - Блог Заядлого Путешественника</title>
+    <!-- Сброс стилей браузера по умолчанию -->
+    <link rel="stylesheet" href="modern-normalize.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="pages.css">
+</head>
+<body>
+    <!-- Шапка: логотип и меню -->
+    <header id="top">
+        <a class="logo" href="index.html">
+            <img src="images/logo.svg" alt="Логотип - компас">
+            <span>Блог Заядлого Путешественника</span>
+        </a>
+        <nav>
+            <ul>
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="about.html">Обо мне</a></li>
+                <li><a href="contact.html" class="active">Контакты</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1 class="page-title">Контакты</h1>
+        <p class="subtitle">Напишите мне или подпишитесь на новые истории</p>
+
+        <!-- Сетка страницы: контакты и форма -->
+        <div class="contacts">
+            <section class="card">
+                <h2>Связаться со мной</h2>
+                <ul class="contact-list">
+                    <li><img src="images/mail.svg" alt="Почта"> email@example.com</li>
+                    <li><img src="images/phone.svg" alt="Телефон"> +7 (XXX) XXX-XX-XX</li>
+                    <li><img src="images/logo.svg" alt="Компас"> Всегда в дороге</li>
+                </ul>
+                <p>Расскажите о месте, которое вас удивило, - возможно, о нём появится новая запись в блоге.</p>
+            </section>
+
+            <section class="card">
+                <h2>Подписка на блог</h2>
+                <!-- Форма обратной связи и подписки -->
+                <form class="subscribe" action="#" method="post">
+                    <label for="name">Имя</label>
+                    <input type="text" id="name" name="name" placeholder="Введите имя" required>
+
+                    <label for="email">E-mail</label>
+                    <input type="email" id="email" name="email" placeholder="example@mail.ru" required>
+
+                    <label for="message">Сообщение</label>
+                    <textarea id="message" name="message" placeholder="Куда вы мечтаете поехать?"></textarea>
+
+                    <fieldset>
+                        <legend>Категория</legend>
+                        <label><input type="radio" name="category" value="school" checked> Школьник</label>
+                        <label><input type="radio" name="category" value="student"> Студент</label>
+                        <label><input type="radio" name="category" value="teacher"> Преподаватель</label>
+                        <label><input type="radio" name="category" value="other"> Другое</label>
+                    </fieldset>
+
+                    <div class="buttons">
+                        <input type="submit" value="Подписаться">
+                        <input type="reset" value="Очистить">
+                    </div>
+                </form>
+            </section>
+        </div>
+    </main>
+
+    <!-- Подвал -->
+    <footer>
+        <p>Контакты: email@example.com | Телефон: +7 (XXX) XXX-XX-XX</p>
+        <p>&copy; 2025 Блог Заядлого Путешественника. Автор: Махмудолиев И. М., группа Бд713</p>
+    </footer>
+    <!-- Кнопка перехода наверх страницы -->
+    <a href="#top" class="to-top">↑ Наверх</a>
+</body>
+</html>

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Обо мне - Блог Заядлого Путешественника">
+    <meta name="author" content="Махмудолиев Имран Махмудович, группа Бд713">
+    <title>Обо мне - Блог Заядлого Путешественника</title>
+    <!-- Сброс стилей браузера по умолчанию -->
+    <link rel="stylesheet" href="modern-normalize.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="pages.css">
+</head>
+<body>
+    <!-- Шапка: логотип и меню -->
+    <header id="top">
+        <a class="logo" href="index.html">
+            <img src="images/logo.svg" alt="Логотип - компас">
+            <span>Блог Заядлого Путешественника</span>
+        </a>
+        <nav>
+            <ul>
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="about.html" class="active">Обо мне</a></li>
+                <li><a href="contact.html">Контакты</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1 class="page-title">Обо мне</h1>
+        <p class="subtitle">Кто пишет этот блог и зачем</p>
+
+        <!-- Сетка страницы: две колонки и полоса статистики -->
+        <div class="about">
+            <section class="card">
+                <h2>Привет, путешественник!</h2>
+                <div class="profile">
+                    <img src="images/avatar.svg" alt="Аватар путешественника">
+                    <p>Этот блог - учебный проект по курсу «Интернет-программирование». Автор сайта - Махмудолиев Имран, группа Бд713.</p>
+                </div>
+                <p>Здесь собраны места России, которые хочется увидеть своими глазами: озёра, горы, древние города и вулканы. <span class="accent">Мир ближе, чем кажется.</span></p>
+
+                <h3>Советы в дорогу</h3>
+                <ul class="tips">
+                    <li>Заранее узнайте погоду и сезон</li>
+                    <li>Берите с собой удобную обувь</li>
+                    <li>Оставляйте природу чистой</li>
+                    <li>Сохраняйте карты для работы без интернета</li>
+                </ul>
+            </section>
+
+            <section class="card">
+                <h2>Лучшее время для поездки</h2>
+                <table class="places">
+                    <caption>Когда ехать</caption>
+                    <tr>
+                        <th>Место</th>
+                        <th>Регион</th>
+                        <th>Сезон</th>
+                    </tr>
+                    <tr>
+                        <td>Байкал</td>
+                        <td>Иркутская область, Бурятия</td>
+                        <td>Февраль – март, июль – август</td>
+                    </tr>
+                    <tr>
+                        <td>Алтай</td>
+                        <td>Республика Алтай</td>
+                        <td>Июнь – сентябрь</td>
+                    </tr>
+                    <tr>
+                        <td>Казань</td>
+                        <td>Республика Татарстан</td>
+                        <td>Круглый год</td>
+                    </tr>
+                    <tr>
+                        <td>Куршская коса</td>
+                        <td>Калининградская область</td>
+                        <td>Май – сентябрь</td>
+                    </tr>
+                    <tr>
+                        <td>Камчатка</td>
+                        <td>Камчатский край</td>
+                        <td>Июль – сентябрь</td>
+                    </tr>
+                </table>
+            </section>
+
+            <!-- Статистика: сетка из трёх блоков на всю ширину -->
+            <section class="stats">
+                <div class="stat"><b>5</b> мест в блоге</div>
+                <div class="stat"><b>11</b> часовых поясов в России</div>
+                <div class="stat"><b>1642 м</b> глубина Байкала</div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Подвал -->
+    <footer>
+        <p>Контакты: email@example.com | Телефон: +7 (XXX) XXX-XX-XX</p>
+        <p>&copy; 2025 Блог Заядлого Путешественника. Автор: Махмудолиев И. М., группа Бд713</p>
+    </footer>
+    <!-- Кнопка перехода наверх страницы -->
+    <a href="#top" class="to-top">↑ Наверх</a>
+</body>
+</html>

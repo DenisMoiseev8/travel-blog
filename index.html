@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Блог Заядлого Путешественника - самые интересные места России">
+    <meta name="author" content="Махмудолиев Имран Махмудович, группа Бд713">
+    <title>Блог Заядлого Путешественника</title>
+    <!-- Сброс стилей браузера по умолчанию -->
+    <link rel="stylesheet" href="modern-normalize.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Шапка: логотип и меню -->
+    <header id="top">
+        <a class="logo" href="index.html">
+            <img src="images/logo.svg" alt="Логотип - компас">
+            <span>Блог Заядлого Путешественника</span>
+        </a>
+        <nav>
+            <ul>
+                <li><a href="index.html" class="active">Главная</a></li>
+                <li><a href="about.html">Обо мне</a></li>
+                <li><a href="contact.html">Контакты</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1 class="page-title">Путешествия по России</h1>
+        <p class="subtitle">Пять мест, ради которых стоит собрать рюкзак</p>
+
+        <!-- Сетка путешествий на grid -->
+        <div class="grid-container">
+            <article class="item">
+                <img src="images/baikal.jpg" alt="Байкал, вид с острова Ольхон">
+                <h2>Байкал</h2>
+                <p>Самое глубокое озеро на планете: его глубина достигает 1642 метров. Зимой прозрачный лёд Байкала превращается в настоящий каток.</p>
+                <a class="more" href="https://ru.wikipedia.org/wiki/Байкал" target="_blank">Подробнее</a>
+            </article>
+            <article class="item">
+                <img src="images/altai.jpg" alt="Гора Белуха на Алтае">
+                <h2>Алтай</h2>
+                <p>Горы, бирюзовые реки и Телецкое озеро. Высочайшая вершина Сибири - гора Белуха высотой 4506 метров.</p>
+                <a class="more" href="https://ru.wikipedia.org/wiki/Белуха" target="_blank">Подробнее</a>
+            </article>
+            <article class="item">
+                <img src="images/kazan.jpg" alt="Мечеть Кул-Шариф в Казанском кремле">
+                <h2>Казань</h2>
+                <p>Казанский кремль с мечетью Кул-Шариф и Благовещенским собором входит в список Всемирного наследия ЮНЕСКО.</p>
+                <a class="more" href="https://ru.wikipedia.org/wiki/Казанский_кремль" target="_blank">Подробнее</a>
+            </article>
+            <article class="item item-large">
+                <img src="images/curonian.jpg" alt="Дюны Куршской косы">
+                <span class="tag">Большое путешествие</span>
+                <h2>Куршская коса, Калининград</h2>
+                <p>Узкая полоса песка между Балтийским морем и Куршским заливом. Здесь высокие дюны, «Танцующий лес» с изогнутыми соснами и одна из главных станций кольцевания птиц. Коса внесена в список Всемирного наследия ЮНЕСКО.</p>
+                <a class="more" href="https://ru.wikipedia.org/wiki/Куршская_коса" target="_blank">Подробнее</a>
+            </article>
+            <article class="item item-large">
+                <img src="images/kamchatka.jpg" alt="Долина гейзеров на Камчатке">
+                <span class="tag">Большое путешествие</span>
+                <h2>Камчатка</h2>
+                <p>Край вулканов и гейзеров. Долина гейзеров в Кроноцком заповеднике - одно из крупнейших гейзерных полей в мире, а Ключевская сопка - самый высокий действующий вулкан Евразии.</p>
+                <a class="more" href="https://ru.wikipedia.org/wiki/Долина_гейзеров" target="_blank">Подробнее</a>
+            </article>
+        </div>
+
+        <!-- Авторы фотографий (требование лицензий Creative Commons) -->
+        <p class="credits">Фото с Wikimedia Commons:
+            <a href="https://commons.wikimedia.org/wiki/File:Olkhon_Island,_View_of_Lake_Baikal,_Russia.jpg" target="_blank">Байкал</a> - Vyacheslav Argenberg, CC BY 4.0;
+            <a href="https://commons.wikimedia.org/wiki/File:Belukha_from_Kurunda_02.jpg" target="_blank">Алтай</a> - Katancev, CC BY-SA 3.0;
+            <a href="https://commons.wikimedia.org/wiki/File:Kazan_Kul_Sharif_Mosque_2024-07-13_1341.jpg" target="_blank">Казань</a> - Mike1979 Russia, CC BY-SA 3.0;
+            <a href="https://commons.wikimedia.org/wiki/File:Curonian_Spit_-_Dunes_view_from_Epha_Berg.jpg" target="_blank">Куршская коса</a> - Alexander Grebenkov, CC BY 3.0;
+            <a href="https://commons.wikimedia.org/wiki/File:Valley_of_Geysers_(Kamchatka,_2020)-1.jpg" target="_blank">Камчатка</a> - Rubin16, CC BY-SA 4.0.
+        </p>
+    </main>
+
+    <!-- Подвал -->
+    <footer>
+        <p>Контакты: email@example.com | Телефон: +7 (XXX) XXX-XX-XX</p>
+        <p>&copy; 2025 Блог Заядлого Путешественника. Автор: Махмудолиев И. М., группа Бд713</p>
+    </footer>
+    <!-- Кнопка перехода наверх страницы -->
+    <a href="#top" class="to-top">↑ Наверх</a>
+</body>
+</html>

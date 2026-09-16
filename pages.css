@@ -1,0 +1,247 @@
+/* =========================================================
+   Практическая работа 15 (grid). Стили страниц «Обо мне» и «Контакты»
+   ========================================================= */
+
+/* ===================== Обо мне ===================== */
+.about {
+  display: grid;
+  grid-template-columns: 1fr 1fr;     /* две колонки: рассказ и таблица */
+  gap: 25px;
+  margin-top: 25px;
+}
+
+.card {
+  background-color: #ffffff;
+  border-radius: 14px;
+  padding: 25px;
+  box-shadow: 0 4px 14px rgba(15, 92, 92, 0.12);
+}
+
+.card h2 {
+  margin-top: 0;
+  padding-bottom: 8px;
+  border-bottom: 3px dotted #f4a261;
+}
+
+/* Блок «профиль»: аватар слева, текст справа */
+.profile {
+  display: grid;
+  grid-template-columns: 120px 1fr;
+  gap: 20px;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.profile img {
+  width: 120px;
+  height: 120px;
+}
+
+.profile p {
+  margin: 0;
+}
+
+.card p {
+  text-indent: 20px;
+  text-align: justify;
+}
+
+.accent {
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 3px;       /* разреженный текст */
+  color: #b3541e;
+}
+
+/* Список с маркером-рисунком */
+.tips {
+  list-style-image: url("images/marker.svg");
+  padding-left: 28px;
+}
+
+.tips li {
+  margin-bottom: 6px;
+  padding-left: 4px;
+}
+
+/* Цифры-статистика: сетка 3 колонки */
+.stats {
+  grid-column: 1 / -1;           /* на всю ширину страницы */
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.stat {
+  text-align: center;
+  background-image: linear-gradient(135deg, #0f5c5c, #1f8a70);
+  color: #ffffff;
+  border-radius: 14px;
+  padding: 20px;
+}
+
+.stat b {
+  display: block;
+  font-family: 'Comfortaa', sans-serif;
+  font-size: 38px;
+}
+
+/* Таблица */
+.places {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.places caption {
+  font-weight: 700;
+  color: #0f5c5c;
+  margin-bottom: 8px;
+}
+
+.places th,
+.places td {
+  border: 1px solid #cfe3de;
+  padding: 9px 12px;
+  text-align: left;
+}
+
+.places th {
+  background-color: #0f5c5c;
+  color: #ffffff;
+}
+
+.places tr:nth-child(even) {
+  background-color: #eef5f3;
+}
+
+.places tr:hover td {
+  background-color: #fdebd9;
+}
+
+/* ===================== Контакты ===================== */
+.contacts {
+  display: grid;
+  grid-template-columns: 1fr 1.3fr;
+  gap: 25px;
+  margin-top: 25px;
+}
+
+.contact-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.contact-list li {
+  display: grid;
+  grid-template-columns: 32px 1fr;   /* иконка | текст */
+  align-items: center;
+  gap: 12px;
+  padding: 10px 0;
+  border-bottom: 1px dashed #cfe3de;
+}
+
+.contact-list img {
+  width: 30px;
+  height: 30px;
+}
+
+/* Форма подписки: сетка «подпись | поле» */
+.subscribe {
+  display: grid;
+  grid-template-columns: 110px 1fr;
+  gap: 14px;
+  align-items: center;
+}
+
+.subscribe label {
+  font-weight: 700;
+  color: #0f5c5c;
+}
+
+.subscribe input[type="text"],
+.subscribe input[type="email"],
+.subscribe textarea {
+  width: 100%;
+  padding: 10px 12px;
+  font-size: 16px;
+  font-family: inherit;
+  border: 2px solid #cfe3de;
+  border-radius: 10px;
+}
+
+.subscribe textarea {
+  resize: vertical;
+  min-height: 90px;
+}
+
+.subscribe input:focus,
+.subscribe textarea:focus {
+  outline: none;
+  border-color: #f4a261;
+}
+
+.subscribe fieldset {
+  grid-column: 1 / -1;             /* на всю ширину формы */
+  border: 2px solid #cfe3de;
+  border-radius: 10px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);  /* категории в две колонки */
+  gap: 6px 20px;
+}
+
+.subscribe fieldset label {
+  font-weight: 400;
+  color: #26343f;
+}
+
+.subscribe legend {
+  font-weight: 700;
+  color: #0f5c5c;
+  padding: 0 6px;
+}
+
+.buttons {
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: repeat(2, max-content);
+  gap: 12px;
+}
+
+.buttons input {
+  padding: 10px 26px;
+  font-size: 16px;
+  font-weight: 700;
+  font-family: inherit;
+  border-radius: 22px;
+  cursor: pointer;
+  border: 2px solid #0f5c5c;
+}
+
+.buttons input[type="submit"] {
+  background-color: #0f5c5c;
+  color: #ffffff;
+}
+
+.buttons input[type="submit"]:hover {
+  background-color: #f4a261;
+  border-color: #f4a261;
+  color: #26343f;
+}
+
+.buttons input[type="reset"] {
+  background-color: transparent;
+  color: #0f5c5c;
+}
+
+/* ===================== Узкий экран ===================== */
+@media (max-width: 800px) {
+  .about,
+  .contacts,
+  .stats {
+    grid-template-columns: 1fr;
+  }
+  .subscribe {
+    grid-template-columns: 1fr;
+  }
+}
